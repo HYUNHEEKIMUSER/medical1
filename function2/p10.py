@@ -8,7 +8,7 @@ def card_creat(card):
     card_number = [0]*13
     # 카드숫자
     for i in range(13):
-        card_number[i]=i
+        card_number[i]=i+1
     card_number[0] = "A"
     card_number[-3]="J"
     card_number[-2]="Q"
