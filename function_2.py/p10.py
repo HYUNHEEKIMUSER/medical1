@@ -28,7 +28,7 @@ def card_shuffle():
     random.shuffle(card_creat(card))
     print(card)
 def card_share():
-    pass
+    pick = int(input("원하는 카드 수를 작성하세요>>"))
 
 def card_print():
     pass
