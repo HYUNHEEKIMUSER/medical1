@@ -10,21 +10,31 @@
         font-weight: 400;
         font-style: normal;}
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-        #main{white-space: nowrap;}
+        body{display: flex; }
+        .main{display: flex;}
+        section{
+            justify-content: space-between; align-items: center;}
+        
 
-        .cont1 img{width: 320px;}
-        .cont3 img{width: 320px;}
-        .cont5 img{width: 320px;}
-        .cont7 img{width: 320px;}
+        .cont1 img{width: 320px; float: left;}
+        .cont3 img{width: 320px; float: left;}
+        .cont5 img{width: 320px; float: left;}
+        .cont7 img{width: 320px; float: left;}
+
+    
 
         .cont2 .p1{font-size: 11px; color:rgb(206, 173, 236) ;
-               margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;} 
+               margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;
+               } 
         .cont4 .p4{font-size: 11px; color:rgb(206, 173, 236) ;
-        margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;} 
+        margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;
+        } 
         .cont6 .p7{font-size: 11px; color:rgb(206, 173, 236) ;
-            margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;} 
+            margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;
+            } 
         .cont8 .p10{font-size: 11px; color:rgb(206, 173, 236) ;
-            margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;} 
+            margin-top:1.5%; margin-bottom: 0.5%; font-weight: 700;
+            } 
 
         .cont2 .p2{font-size: 18px; font-weight: 700; margin-bottom: 0.5%; color:rgb(82, 80, 80)} 
         .cont4 .p5{font-size: 18px; font-weight: 700; margin-bottom: 0.5%; color:rgb(82, 80, 80)} 
@@ -39,29 +49,34 @@
 </head>
 <body>
     <div class="main">
-        <div class="cont1">
-            <img src="images/trip.jpg">
-        </div>
-        <div class="cont2">
-            <p class="p1">패키지</p>
-            <p class="p2">구채구/성도 5일 #사천성완전일주
-                #준특<br>급호텔#고속열차이동#활욜풍경구#노옵
-                <br>
-                ...
-            </p>
-            <p class="p3">1,499,000<span>원~</span></p>
-        </div>
-        <div class="cont3">
-            <img src="images/trip1.jpg">
-        </div>
-        <div class="cont4">
-            <p class="p4">패키지</p>
-            <p class="p5">[대박특가]코타키나발루 5일 #밍가든
-                #<br>아일랜드투어 #선셋나이트투어 #핵심...
-                <br>
-            </p>
-            <p class="p6">399,000<span>원~</span></p>
-        </div>
+        <section>
+            <div class="cont1">
+                <img src="images/trip.jpg">
+            </div>
+            <div class="cont2">
+                <p class="p1">패키지</p>
+                <p class="p2">구채구/성도 5일 #사천성완전일주
+                    #준특<br>급호텔#고속열차이동#활욜풍경구#노옵
+                    <br>
+                    ...
+                </p>
+                <p class="p3">1,499,000<span>원~</span></p>
+            </div>
+        </section>
+        <section>
+            <div class="cont3">
+                <img src="images/trip1.jpg">
+            </div>
+            <div class="cont4">
+                <p class="p4">패키지</p>
+                <p class="p5">[대박특가]코타키나발루 5일 #밍가든
+                    #<br>아일랜드투어 #선셋나이트투어 #핵심...
+                    <br>
+                </p>
+                <p class="p6">399,000<span>원~</span></p>
+            </div>
+        </section>
+        <section>
             <div class="cont5">
                 <img src="images/trip2.jpg">
             </div>
@@ -73,17 +88,20 @@
                 </p>
                 <p class="p9">4,899,000<span>원~</span></p>
             </div>
-                <div class="cont7">
-                    <img src="images/trip3.jpg">
-                </div>
-                <div class="cont8">
-                    <p class="p10">패키지</p>
-                    <p class="p11">[베네치아전세기]이탈리아 스위스 9일#
-                        <br>시내호텔1박 #융프라우요흐#피사 #로...
-                        <br>
-                    </p>
+        </section>
+        <section>
+            <div class="cont7">
+                <img src="images/trip3.jpg">
+            </div>
+            <div class="cont8">
+                <p class="p10">패키지</p>
+                <p class="p11">[베네치아전세기]이탈리아 스위스 9일#
+                    <br>시내호텔1박 #융프라우요흐#피사 #로...
+                    <br>
+                </p>
                     <p class="p12">5,199,000<span>원~</span></p>
-                </div>
+            </div>
+        </section>
         </div>
     </body>
 </html>
