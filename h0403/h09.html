@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+                
+        .top{width: 100%; height: 200px; background: steelblue; font-size: 50px;}
+        .footer{width: 100%; height: 300px; background: lavender; font-size: 50px;}
+        .parents{width: 100%; height: 600px; display: flex;}
+        .kids{width: 60%; height: 600px; background: white; display: flex; justify-content: space-between;}
+        .right{width: 40%; height: 600px; background: khaki; font-size: 50px;}
+        .left01{width: 33%; font-size: 50px; background: tan;}
+        .left02{width: 33%; font-size: 50px; background: tan;}
+        .left03{width: 33%; font-size: 50px; background: tan;}
+
+        @media screen and (max-width: 1600px) {
+            .left01{background: blue;}}
+        @media screen and (max-width: 1200px) {
+            .left01{background: green;}}
+        @media screen and (max-width: 1000px) {
+            .left01{background: pink;}
+            .right{display: none;}
+            .left{width: 100%;}
+            }
+        @media screen and (max-width: 800px) {
+            .left01{background: yellow; width: 50%;}
+            .left03{display: none;}
+            }
+        @media screen and (max-width: 600px) {
+            .left01{background: aqua; width: 100%;}
+            .left02{display: block; width: 100%;}
+            .left03{display: block; width: 100%;}
+            .left01, .left02 .left03{height: 400px;}
+            section{display: block;}
+            }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="top">탑</div>
+        <div class="parents">
+            <div class="kids">
+                <div class="left01">왼쪽1</div>
+                <div class="left02">왼쪽2</div>
+                <div class="left03">왼쪽3</div>
+            </div>
+            <div class="right">오른쪽</div>
+        </div>
+        <div class="footer">푸터</div>
+    </section>
+</body>
+</html>

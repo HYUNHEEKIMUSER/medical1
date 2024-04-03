@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜지션</title>
+    <style>
+        /*div{width: 100px; height: 100px; background: blue; border: 3px solid black;
+            1.transition-property: width,height,background; 요소지정
+            2.transition-duration: 1s; 애니메이션 시간
+            3.transition-dalay:3s; 대기시간
+            4.transition-timing-function: ease-in;} 진행속도
+        transition:all 1s 3s ease-in;-->property duration delay funciton 하나로 묶을 수 있음*/
+        div{width: 100px; height: 100px; background: blue; border: 3px solid black;
+            transition:all 1s 3s ease-in;}
+        div:hover{width: 200px; height: 200px; background: red;}
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
