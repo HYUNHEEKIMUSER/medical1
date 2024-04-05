@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var month = Number(prompt("달을 입력하세요>> "));
+        if(month>=3 && month <6){
+            {document.write("봄입니다.");}
+        }
+        else if(month>=6 && month <9){
+            {document.write("여름입니다.");}
+        }
+        else if(month>=9 && month<12){
+            {document.write("가을입니다.");}
+        }
+        else if((month >=1 && month<=2) || month==12){document.write("겨울입니다.");}
+
+
+
+        var season1 =prompt("월 입력")
+        season1=season1.slice(0,-1);  /*string*/
+        season=Number(season1);  //number -길이없음
+        document.write(season);
+        document.write("입력글자: ",)
+
+        var season2 =prompt("월 입력")
+        season1=season2.slice(0,-1);  /*string, 길이 1이 줄어들음 길이 있음*/
+        season=Number(season1);  //number -길이없음
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
