@@ -1,0 +1,65 @@
+1) var site=prompt("1. 네이버 2. 구글 3. 다음 번호 선택");
+var url;
+switch(site){
+    case "1":
+        url = "http://www.naver.com";
+        break;
+    case "2": case "4": case "5": case "6": case "7":   /*4<=x<=7*/
+        url = "http://www.google.com";
+        break;
+    case "3":
+        url = "http://www.daum.net";
+        break;
+    default:
+        alert("번호를 잘못 입력하셨습니다.");
+}
+if(url){
+    location.href = url;
+}
+
+2)var num=Number(prompt("숫자 입력"));
+var i=1;
+while(i<=num){
+    if(i%2==0 && i%7==0){
+    document.write("2 또는 7의 배수: ",i,"<br>");}
+    i++;
+}
+
+3)for(var i=2; i<10; i++){
+    document.write("<h2>[ ",i,"단]</h2>")
+    for(var j=1; j<10; j++){
+    document.write(i,"*",j,"=",i*j,"&nbsp&nbsp");}
+
+4) document.write(Math.round(num),"<br>"); // 소수점 첫번 째자리에서 반올림
+document.write(Math.ceil(num),"<br>"); // 소수점 첫번 째자리에서 올림
+document.write(Math.floor(num),"<br>");  // 소수점 첫번 째자리에서 버림
+
+5) arr1.push(6); //배열 뒤에 추가
+arr1.push(7);
+arr1.pop();//배열 맨 뒤 삭제
+
+6)var num=5;
+console.log(String(num).padStart(2,"0"));
+
+
+var lo=Math.floor(Math.random()*100000)+1;
+var lotto=String(lo).padStart(5,"0");
+
+var in_no=prompt("5자리 숫자 입력",lotto);
+var count=0
+for(var i=0;i<lotto.length;i++){
+    if(lotto[i]==in_no[i]){
+        count++;
+        continue;
+    }
+}
+document.write("로또번호: ",lotto,'<br>');
+document.write("입력번호: ",in_no,'<br>');
+document.write("일치갯수: ",count,'<br>');
+
+7) var num_str = '12345';
+document.write(num_str.substring(0,3),"<br>");
+document.write(num_str.charAt(4),"<br>");
+
+var num='010-1234-4567'
+document.write(num.replace("4567","****"),"<br>");
