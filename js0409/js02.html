@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return</title>
+    <script>    
+        
+        function avg(num1,num2){
+            let n_total = num1+num2;
+            var n_avg = (num1+num2)/2 
+            let arr_result = [n_total,n_avg];
+            return n_avg;  //return값은 하나만 가능 return arr_result로 하면 두개로 하는 기능
+            return arr_result;
+        }
+
+        num1 = Number(prompt("국어점수를 입력하세요"));
+        num2 = Number(prompt("영어점수를 입력하세요"));
+        
+        let arr_result = result(num1,num2);
+
+        document.write("평균: ",arr_result,"<br>");
+    </script>
+</head>
+<body>
+    <button>평균구하기</button>
+</body>
+</html>
