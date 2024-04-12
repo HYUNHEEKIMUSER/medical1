@@ -28,7 +28,7 @@
         let hdata = ' ';
         for(let i=0; i<10; i++){
             hdata+='<tr>';
-            hdata+='<td>'+(i+1)+'</td>';
+            hdata+='<td class="'+no[i]+'">'+no[i]+'</td>';
             hdata+='<td>'+name[i]+'</td>';
             hdata+='<td>'+number[i]+'</td>';
             hdata+='<td>'+gender[i]+'</td>';
@@ -42,7 +42,13 @@
 
         // 삭제
             
-    })
+            //let del_id = $(".delBtn").parent().parent().prop("id")
+            $(document).on("click",".delBtn",function(){
+                if(confirm("정말 삭제하시겠습니까?")){
+                $("tr").remove("#main");}
+                
+            });
+        });
 </script>
 <body>
     <section>
@@ -59,7 +65,7 @@
             </colgroup>
         <thead>
             <tr>
-                <td>번호</td>
+                <td class="num">번호</td>
                 <td>이름</td>
                 <td>학번</td>
                 <td>성별</td>
@@ -69,8 +75,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
+            <tr id="main">
+                <td class="num">1</td>
                 <td>aaa</td>
                 <td>1111</td>
                 <td>M</td>
