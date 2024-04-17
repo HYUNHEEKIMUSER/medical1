@@ -66,11 +66,9 @@ $(function(){
                 console.log(data);
                 s_count = data.length;
                 let htmlData = "";
-                for (let i=0;i<10;i++){
-
-
-                    //예시 홍길동.indexOf("홍")이 있는 지 없는 지(-1이면 없다임)    
-                    if(data[i].name.indexOf(s_word)!=-1){
+                for (let i=0;i<data.length;i++){                 
+                        //예시 홍길동.indexOf("홍")이 있는 지 없는 지(-1이면 없다임)   
+                        if(data[i].name.indexOf(s_word) != -1){
                         htmlData += "<tr id='"+data[i].no+"'>";
                         htmlData += "<td><input type='checkbox' name='stu' class='stuChk' value='"+data[i].no+"'></td>";
                         htmlData += "<td>"+data[i].no+"</td>";
@@ -83,30 +81,14 @@ $(function(){
                         htmlData += "<td>"+data[i].rank+"</td>";
                         htmlData += "<td><button class='delBtn'>삭제</button></td>";
                         htmlData += "</tr>";
-                    } //if 문 있으면 그대로 출력되게 하기
-
-
-                    htmlData += "<tr id='"+data[i].no+"'>";
-                    htmlData += "<td><input type='checkbox' name='stu' class='stuChk' value='"+data[i].no+"'></td>";
-                    htmlData += "<td>"+data[i].no+"</td>";
-                    htmlData += "<td>"+data[i].name+"</td>";
-                    htmlData += "<td>"+data[i].kor+"</td>";
-                    htmlData += "<td>"+data[i].eng+"</td>";
-                    htmlData += "<td>"+data[i].math+"</td>";
-                    htmlData += "<td>"+data[i].total+"</td>";
-                    htmlData += "<td>"+data[i].avg+"</td>";
-                    htmlData += "<td>"+data[i].rank+"</td>";
-                    htmlData += "<td><button class='delBtn'>삭제</button></td>";
-                    htmlData += "</tr>";
-                }//for
-                // html소스를 tbody 추가
-                $("#body").html(htmlData);
-            },
-            error:function(){ alert("에러"); }
-          });//ajax
-    });
-
-
+                        }//if
+                    }//for
+                        // html소스를 tbody 추가
+                        $("#body").html(htmlData);
+                    },
+                    error:function(){ alert("에러"); }
+                });//ajax
+            });
 
     //학생입력버튼 클릭
     $("#writeBtn").click(function(){
@@ -145,7 +127,7 @@ $(function(){
             //번호생성은 DB에서 자동으로 부여
             //let i_no = Math.max.apply(null,no)+1;
             //no.push(i_no);
-            let i_no = s_count+1;
+            let s_count = s_count+1;
             let i_name = $("#name").val(); //String
             let i_kor = Number($("#kor").val());
             let i_eng = Number($("#eng").val());
@@ -154,7 +136,7 @@ $(function(){
             let i_avg = (i_total/3).toFixed(2); //소수점2자리 반올림
             //table tr추가
             let htmlData = "";
-            htmlData += "<tr id='"+i_no+"'>";
+            htmlData += "<tr id='"+s_count+"'>";
             htmlData += "<td><input type='checkbox' name='stu' class='stuChk' value='"+i_no+"'></td>";
             htmlData += "<td>"+i_no+"</td>";
             htmlData += "<td>"+i_name+"</td>";
