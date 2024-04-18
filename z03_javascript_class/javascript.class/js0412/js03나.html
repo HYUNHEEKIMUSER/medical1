@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #main{width: 1200px; margin: 50px auto;}
+        #main h2{text-align: center; margin-bottom: 20px;}
+        #main table{border-collapse: collapse; width: 1200px;}
+        #main th{height: 45px; background: #efefef; text-align: center; border: 1px solid black;}
+        #main td{height: 40px; text-align: center; border: 1px solid black;}
+        #button{margin-top: 30px; display: flex; justify-content: flex-end ; width: 1200px;}
+        #button button{display: inline-block; width: 130px; height: 40px; margin-left: 10px; font-size: 17px;}
+
+
+
+        .p_all{width: 100%; height: 100%; background: rgba(0,0,0,0.4); position: absolute; top:0; display: none;}
+
+        .p_main{width: 600px; height: 450px; border: 1px solid #ddd; margin: 0 auto; background: white; position: relative; top: 25%;}
+        .p_main h2{text-align: center; font-size: 40px; color: #333; font-weight: 700; margin: 40px;}
+        .p_main table{width: 600px;  border-collapse: collapse; font-size: 20px; color: #666;}
+        .p_main th{padding-left: 50px; text-align: left;}
+        .p_main td{height:50px;}
+        .p_main input[type='text']{width: 400px; height: 40px; padding-left: 20px; box-sizing: border-box;
+            border: 1px solid #ddd; font-size: 20px;}
+        .p_main button{width: 140px; height: 40px; background: #96694c; color:white; font-weight: 700;
+            font-size: 18px; border: 0;}
+        #in_btn{text-align: center; height: 100px;}
+    </style>
+    <script>
+        $(function(){
+            let no = [1,2,3,4,5,6,7,8,9,10];
+            let name = ['홍길동','유관순','이순신','김구','강감찬','김유신','홍길순','홍길자','최현묵','이규원'];
+            let kor = [100,62,90,64,76,51,89,77,55,73,53];
+            let eng = [100,70,62,73,54,55,60,67,77,51,100];
+            let math = [100,81,79,50,83,72,79,82,86,50,94];
+            let total = [300,213,231,187,213,178,228,226,218,174,247];
+            let avg = [100,71,77,62.3,71,59.3,76,75.3,72.7,58,82.3];
+
+            let htmlData = ' ';
+            for(let i=0; i<no.length;i++){
+                htmlData += "<tr id='"+no[i]+"'>";
+                htmlData += "<td><input type='checkbox' name='stu' class='stuChk' value='"+no[i]+"'></td>";
+                htmlData += "<td>"+no[i]+"</td>";
+                htmlData += "<td>"+name[i]+"</td>";
+                htmlData += "<td>"+kor[i]+"</td>";
+                htmlData += "<td>"+eng[i]+"</td>";
+                htmlData += "<td>"+math[i]+"</td>";
+                htmlData += "<td>"+total[i]+"</td>";
+                htmlData += "<td>"+avg[i]+"</td>";
+                htmlData += "<td>0</td>";
+                htmlData += "<td><button class='delBtn'>삭제</button></td>";
+                htmlData += "</tr>";}
+
+                $("#body").html(htmlData);
+
+            $("#allChk").click(function(){
+                if($(this).is(":checked")==true){
+                    $(".stuChk").each(function(){
+                        $(this).prop("checked",true);
+                    })
+                }
+                else{
+                    $(".stuChk").each(function(){
+                        $(this).prop("checked",false);
+                    }); 
+                }
+            })     
+
+            $(".delBtn").click(function(){
+                if(confirm("정말 삭제하시겠습니까?")){
+                    $("#"+$(this).parent().parent().prop("id")).remove()
+                }
+            });
+
+            $("#writeBtn").click(function(){
+                $('.p_all').css("display",'black');
+            
+            $("#cancelBtn").click(function(){
+                $('.p_all').css("display","none");
+            })
+            })
+
+        })//마지막
+    </script>
+</head>
+<body>
+    <section id ='main'>
+        <h2>학생성적프로그램</h2>
+        <table>
+            <colgroup>
+                <col width ='8%'>
+                <col width ='8%'>
+                <col width ='*'>
+                <col width ='8%'>
+                <col width ='8%'>
+                <col width ='8%'>
+                <col width ='12%'>
+                <col width ='12%'>
+                <col width ='12%'>
+                <col width ='10%'>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="allChk" id="allChk" value="allChk"></th>
+                    <th>학번</th>
+                    <th>이름</th>
+                    <th>국어</th>
+                    <th>영어</th>
+                    <th>수학</th>
+                    <th>합계</th>
+                    <th>평균</th>
+                    <th>등수</th>
+                    <th>삭제</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+                
+                
+            </tbody>
+            </table>
+            <div id="button">
+                <button id="writeBtn">학생입력</button>
+                <button id="modifyBtn">학생수정</button>
+                <button id="deleteBtn">학생삭제</button>
+                <button id="searchBtn">학생검색</button>
+            </div>
+    </section>
+    <div class ='p_all'>
+        <div class="p_main">
+            <h2>학생성적입력</h2>
+            <form action="#" name="frm" method="get">
+                <table>
+                    <colgroup>
+                        <col width ="150px">
+                        <col width ="400px">
+                    </colgroup>
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <th>국어점수</th>
+                        <td><input type="text" name="kor" id="kor"></td>
+                    </tr>
+                    <tr>
+                        <th>영어점수</th>
+                        <td><input type="text" name="eng" id="eng"></td>
+                    </tr>
+                    <tr>
+                        <th>수학점수</th>
+                        <td><input type="text" name="math" id="math"></td>
+                    </tr>
+                    <tr>
+                        <td id="in_btn" colspan="2">
+                            <button type="button" id = 'confirmBtn'>확인</button>
+                            <button type="button" id = 'cancelBtn'>취소</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

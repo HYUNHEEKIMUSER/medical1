@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+    div{width: 300px; height: 200px; border: 3px solid black;
+        background: yellow; font-size: 25px; text-align: center;
+        overflow: auto; /*자동스크롤*/
+        }
+</style>
+<script>
+    $(function(){
+
+        });
+  
+</script>
+<body>
+    <div id = 'main'></div>
+    <input type="text" name = 'txt' id="txt">
+    <button id = 'dBtn'>확인</button>
+    <script>       
+//같은 내용임 document.querySelector("#txt").addEventListener('keyup',function() =  $("#txt").keyup(function()
+        $(function(){
+            //제이쿼리 이벤트 생성
+            $("#txt").keyup(function(){
+                if(window.event.keyCode==13){
+                    $("#main").append("카톡아이디: "+$("#txt").val()+"<br>"); 
+                    $('#txt').val(""); }
+            })
+        });     
+    </script>
+</body>
+</html>

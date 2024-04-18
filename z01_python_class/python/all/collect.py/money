@@ -1,0 +1,17 @@
+money = 13123400
+
+money5 = money//50000
+money1 =(money%50000)//10000
+money1000 = (((money%50000)%10000)%5000)//1000
+money5000 = ((money%50000)%10000)//5000
+
+
+
+c500 = money//500
+c100 = (money%500)//100
+c50 = ((money%500)%100)//50
+c10 = (((money%500)%100)%50)//10
+
+print('입력 금액: {}'.format(money))
+print('500원: {}'.format(c500))
+print('{:,}'.format(money))

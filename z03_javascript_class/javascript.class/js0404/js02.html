@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항식</title>
+    <script>
+        /*
+        var input='남자';
+        var result= (input=="남자")?"Male":"Female";
+        document.write(result);
+
+        var a = 10;
+        var b = 3;
+        var result = (a>b)?"정답입니다.":"오답입니다.";
+        document.write("결과: ", result,"<br>");
+
+        var number=prompt("숫자 입력하세요");
+        var result=(number%2==0)?"짝수입니다":"홀수입니다";
+        document.write("결과: ",result,"<br>");
+                                                */
+        /*삼항식을 2번 쓸 수도 있다.
+        var num1=9;
+        var num2=15;
+        var num3=7;
+
+        var result = (num1>num2)?((num1>num3)?num1:num3):((num2>num3)?num2:num3);
+        document.write("결과: ",result,"<br>")*/
+
+        var num1 = Number(prompt("첫 번째 숫자 입력하세요 >> "))
+        var num2 = Number(prompt("두 번째 숫자 입력하세요 >> "))
+        var num3 = Number(prompt("세 번째 숫자 입력하세요 >> "))
+
+        var result = (num1<num2)?((num1<num3)?num1:num3):((num2<num3)?num2:num3);
+        document.write("결과: ",result,"<br>")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
