@@ -12,11 +12,20 @@ list= []
 # capitalletter = A-Z
 # smallletter= a-z
 word =input("단어를 입력하세요>> ")
-word.append(list)
-if list in smallletter:
-    if list[0]==list[-1] and list[1]==list[-2]:
-        print("펠렌트롬 단어입니다.")        
-    
+list.append(word)
+
+print(list)
+for j in smallletter:
+    if list[0]==list[-1]:
+        print("펠렌트롬 단어입니다.")      
 else:
-    print("실행이 안됩니다.")
+    print("실행이 안됩니다.")  
+        
+
+# if list in smallletter:
+#     if list[0]==list[-1] and list[1]==list[-2]:
+#         print("펠렌트롬 단어입니다.")        
+    
+# else:
+#     print("실행이 안됩니다.")
     
