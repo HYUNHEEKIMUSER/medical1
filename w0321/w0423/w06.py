@@ -18,21 +18,23 @@ soup=BeautifulSoup(res.text,'lxml')
 # 서울특별시 ,인천, 경기도 3개의 인구를 웹스크래핑
 # replace(",","")
 # split()
-tb = soup.find("tbody")
-trs = tb.find_all("tr")
-tds = trs[1].find_all("td")
+tb = soup.find("table",{"id":"contextTable"})
+tbody = tb.find("tbody")
+# print(tbody)
+trs = tbody.find_all("tr")
+tds = trs[1].find("td",{"title":"2024년 03월 / 계"})
+seoul =tds.text
+print("서울특별시 인구수: ",tds.text)
+tds2 = trs[4].find("td",{"title":"2024년 03월 / 계"})
+incheon = tds2.text
+print("인천직할시 인구: ",tds2.text)
+tds3 = trs[9].find("td",{"title":"2024년 03월 / 계"})
+gyounggi = tds3.text
+print("경기도 인구: ",tds3.text)
 
-print("tds 개수:",len(tds))
-print("인구수 :", tds[2].text)
+total=int(seoul.replace(",",""))+int(incheon.replace(",",""))+int(gyounggi.replace(",",""))
 
-
-
-
-
-# print("서울특별시 인구: ",)
-# print("인천직할시 인구: ",)
-# print("경기도 인구: ",)
-# print("합계 인구: ",)
+print("합계 인구: ",format(total,","))
 
 
 
