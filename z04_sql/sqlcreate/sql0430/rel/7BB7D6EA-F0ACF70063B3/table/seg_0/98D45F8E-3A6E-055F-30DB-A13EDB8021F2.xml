@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98D45F8E-3A6E-055F-30DB-A13EDB8021F2" schemaObject="4896CF5D-9B89-0768-1A1F-893EFB572BA6" name="MEMBER">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>ORA_USER</sourceObjSchema>
+<sourceObjName>MEMBER</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEMNO" id="385EC2E7-0443-544E-4A26-E3BB26F81850">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>MEMNO</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="DE4C6F45-1DC5-FB3C-34D3-AFB62CDB694F">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PW" id="64FCD570-D0FF-1E89-C0F7-F9131FDA64F8">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>PW</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="B917EE97-EBE0-0996-8F06-1A56C59EDD3E">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENDER" id="1B393D41-1862-523E-8210-68007B6B718E">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>GENDER</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<constraintName>SYS_C007366</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;남자&apos;" description=""/>
+<valueDef value="&apos;여자&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MDATE" id="C32463A7-551F-249C-FA7F-D89DE6FF5A2D">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>MEMBER</sourceObjSchema>
+<sourceObjName>MDATE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B3E06B84-C5A9-7A48-0646-8318037904D4" schemaObject="4896CF5D-9B89-0768-1A1F-893EFB572BA6" name="MEMBER_PK">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>ORA_USER</sourceObjSchema>
+<sourceObjName>SYS_C007367</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:29 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE4C6F45-1DC5-FB3C-34D3-AFB62CDB694F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

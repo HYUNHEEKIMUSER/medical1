@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02428D8C-58AE-A03E-8051-4E6628C4DCF9" schemaObject="4896CF5D-9B89-0768-1A1F-893EFB572BA6" name="BOARD">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>ORA_USER</sourceObjSchema>
+<sourceObjName>BOARD</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BNO" id="8707B636-EF16-3B41-73AC-CBF7BCA1DAE2">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BNO</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="A5B89442-C74B-568F-3C3C-DBD788AB49BA">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B113132D-6509-691C-301C-B08A0C20AEFE" referredColumn="DE4C6F45-1DC5-FB3C-34D3-AFB62CDB694F"/>
+</associations>
+</Column>
+<Column name="BTITLE" id="A432E32C-263D-24B6-28BB-826D3C6AC100">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BTITLE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 BYTE</dataTypeSize>
+<ownDataTypeParameters>1000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BCONTENT" id="B9324FA9-AD57-2B1A-9430-5A190DEB3027">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BCONTENT</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BDATE" id="0EA2FF63-9D61-B857-3653-3469EFE58447">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BDATE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BGROUP" id="D9E1F116-BDFA-9E83-51E5-4A591C564A8C">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BGROUP</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BSTEP" id="D1206694-994C-EA14-FD6F-1606D289DF22">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BSTEP</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BINDENT" id="6BCA7777-30BD-F3D7-4692-D381398634FA">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BINDENT</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BHIT" id="D3769BD8-31B6-E26D-B52C-3A1D3F51A7FE">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BHIT</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BFILE" id="2647F491-C7B5-18F2-B6D2-7A27415B8C77">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>BOARD</sourceObjSchema>
+<sourceObjName>BFILE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<defaultValue>&apos;&apos;</defaultValue>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B00DCFF7-AA2B-6FBC-BE81-964062244B39" schemaObject="4896CF5D-9B89-0768-1A1F-893EFB572BA6" name="BOARD_PK">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>ORA_USER</sourceObjSchema>
+<sourceObjName>SYS_C007369</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8707B636-EF16-3B41-73AC-CBF7BCA1DAE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="646A3D47-7E6D-A479-DDFA-A492D985D40C" name="FK_ID">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:29 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5B89442-C74B-568F-3C3C-DBD788AB49BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

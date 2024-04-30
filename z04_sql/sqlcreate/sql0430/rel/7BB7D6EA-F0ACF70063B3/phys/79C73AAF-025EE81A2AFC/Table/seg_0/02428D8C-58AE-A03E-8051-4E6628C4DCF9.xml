@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="BOARD" directorySegmentName="seg_0" id="02428D8C-58AE-A03E-8051-4E6628C4DCF9">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<schemaObject>4896CF5D-9B89-0768-1A1F-893EFB572BA6</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>AF59B201-F800-5261-0851-1D7409DA093A</segment>
+<tableSpace>07216191-BE39-8021-F6FD-15D00E3FAD49</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BDATE" id="0EA2FF63-9D61-B857-3653-3469EFE58447">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<defaultValue>sysdate</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="BFILE" id="2647F491-C7B5-18F2-B6D2-7A27415B8C77">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<defaultValue>&apos;&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="BINDENT" id="6BCA7777-30BD-F3D7-4692-D381398634FA">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="BNO" id="8707B636-EF16-3B41-73AC-CBF7BCA1DAE2">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BTITLE" id="A432E32C-263D-24B6-28BB-826D3C6AC100">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="A5B89442-C74B-568F-3C3C-DBD788AB49BA">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BCONTENT" id="B9324FA9-AD57-2B1A-9430-5A190DEB3027">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BSTEP" id="D1206694-994C-EA14-FD6F-1606D289DF22">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="BHIT" id="D3769BD8-31B6-E26D-B52C-3A1D3F51A7FE">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="BGROUP" id="D9E1F116-BDFA-9E83-51E5-4A591C564A8C">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ID" id="646A3D47-7E6D-A479-DDFA-A492D985D40C">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:29 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BOARD_PK" id="B00DCFF7-AA2B-6FBC-BE81-964062244B39">
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:29 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<schemaObject>4896CF5D-9B89-0768-1A1F-893EFB572BA6</schemaObject>
+<segment>A5603D46-72A7-2DAB-750C-9A8D00994E6D</segment>
+<tableSpace>07216191-BE39-8021-F6FD-15D00E3FAD49</tableSpace>
+<indexSegment>A5603D46-72A7-2DAB-750C-9A8D00994E6D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

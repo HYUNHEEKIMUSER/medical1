@@ -1,0 +1,252 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="415AA99C-9E74-209D-B98F-4BE2E36EE215" schemaObject="4896CF5D-9B89-0768-1A1F-893EFB572BA6" name="EMPLOYEES">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>ORA_USER</sourceObjSchema>
+<sourceObjName>EMPLOYEES</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="A356D2EA-62AE-7B6B-AC98-5112C564A711">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[사원ID]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMP_NAME" id="8A3874D3-9D84-45AC-4E17-F994CF800B2E">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMP_NAME</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[사원이름]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="57FB65FC-AC17-7AAB-EE6E-28E26C1C0A34">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[이메일]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="B19AE881-A35C-6C82-23D6-5CB55BF15F11">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIRE_DATE" id="FF20D097-7322-012E-117C-D59762A8484E">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>HIRE_DATE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[입사일자]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALARY" id="EB1A1BE4-A305-C1EC-12E2-3541FE6FFE2C">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[급여]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="2899852D-223F-BBAD-09AA-008FA09906F6">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[상관ID]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="CABB3104-D0BC-EC4C-E1F8-7440A43750A8">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>COMMISSION_PCT</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[커미션]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RETIRE_DATE" id="DF51D185-492B-473B-28DA-9F3B6D28BDA3">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>RETIRE_DATE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[퇴사일자]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_ID" id="6F36653C-E41B-F17C-37D9-328D4BC471DC">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_ID" id="B898D4FB-E930-4C9E-1C0D-A639E036DDBA">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREATE_DATE" id="4264AD06-EF6E-7C4B-9E8D-40ED76551AE0">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>CREATE_DATE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[생성일자]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPDATE_DATE" id="72066F84-F631-B883-EE3D-A66309C906EF">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>UPDATE_DATE</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[변경일자]]></commentInRDBMS>
+<ownerDesignName>sql0430</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C52966A-FF87-AA1E-5423-20D98B363D41" name="PK_EMPLOYEES">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>ORA_USER</sourceObjSchema>
+<sourceObjName>PK_EMPLOYEES</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:29 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A356D2EA-62AE-7B6B-AC98-5112C564A711"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71D51DA3-417A-941E-3F3F-CBB3D7D77FC8" schemaObject="4896CF5D-9B89-0768-1A1F-893EFB572BA6" name="PK_EMPLOYEES">
+<sourceConnName>ora_user접속자</sourceConnName>
+<sourceObjSchema>ORA_USER</sourceObjSchema>
+<sourceObjName>PK_EMPLOYEES</sourceObjName>
+<createdBy>KOREAVC</createdBy>
+<createdTime>2024-04-30 05:54:29 UTC</createdTime>
+<ownerDesignName>sql0430</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A356D2EA-62AE-7B6B-AC98-5112C564A711"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
