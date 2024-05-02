@@ -1,0 +1,6 @@
+
+# 예로 10개씩 나눠서 보여주도록 구성
+# 가져오는 방법
+perCount = 10
+startrow = (num-1)*perCount+1 # 1,11,21,31......
+endrow = startrow+perCount-1 #10, 20......

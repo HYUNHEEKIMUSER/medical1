@@ -1,3 +1,4 @@
+import oracledb
 import requests
 import time
 import random
@@ -7,7 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+conn = oracledb.connect(user="ora_user",password="1111",dsn="localhost:1521/xe")
+cursor = conn.cursor()
 # 스크롤 내린 후 제일 마지막 제목 출력 (냥줍천사)
 url = "https://watcha.com/browse/webtoon"
 headers= {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"}
