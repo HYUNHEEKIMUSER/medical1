@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "medical-1",
+			"path": "../medical-1"
+		}
+	],
+	"settings": {}
+}
